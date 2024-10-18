@@ -31,11 +31,6 @@ body {
 
 }
 
-.navbar img {
-    width: 52px;
-    height: auto;
-}
-
 .navbar h1 {
     font-size: 30pt;
     font-weight: bolder;
@@ -53,7 +48,7 @@ body {
 
 .navbar ul {
     display: flex;
-    gap: 40px;
+    gap: 48px;
     /* ajuster l'espace entre les elements*/
     list-style: none;
 }
@@ -68,13 +63,14 @@ body {
     color: white;
     position: relative;
     /* Nécessaire pour le pseudo-élément ::after */
+
 }
 
 /* Créer le soulignement pour les liens */
 .navbar a::after {
     content: " ";
     position: absolute;
-    width: 0;
+    width: 0px;
     height: 3px;
     background-color: #fff;
     bottom: -6px;
@@ -318,7 +314,7 @@ body {
 
 /* test blog */
 #blog {
-    background-color: #f9f9f9;
+    background-color: #efefef;
     padding: 50px 0;
     text-align: center;
 }
@@ -473,7 +469,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -520,11 +515,10 @@ body {
 
 #morning-coffe button:hover {
     /* background-color: var(--hoverColor); */
-    /* color:var(--hoverColor); */
     background-color: #e9e9e9;
-    border: 1px solid #e9e9e9;
     color: var(--mainColor);
-    border-color: var(--hoverColor)
+    border-color: var(--hoverColor);
+    border: 1.9px solid white;
 }
 
 #morning-coffe h1 {
@@ -715,57 +709,72 @@ body {
 
 #contain-contact {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
-  /*  align-items: space-around;  Aligne les éléments en haut */
-    gap: 40px; /* Espace entre l'image et le formulaire */
+    grid-template-columns: 1fr 1fr;
+    /* Deux colonnes égales */
+    /*  align-items: space-around;  Aligne les éléments en haut */
+    gap: 40px;
+    /* Espace entre l'image et le formulaire */
     padding: 20px;
     width: 90%;
-    height: 70vh; /* Hauteur fixe du conteneur */
-    margin: 90px auto; /* Centre le conteneur */
+    height: 70vh;
+    /* Hauteur fixe du conteneur */
+    margin: 90px auto;
+    /* Centre le conteneur */
     /* border: 1px solid black;  */
-    box-shadow:0 0 6px 1px rgb(206, 201, 201)
+    box-shadow: 0 0 6px 1px rgb(206, 201, 201)
 }
 
 .contact-image {
     display: flex;
-    justify-content: center; /* Centre l'image horizontalement */
+    justify-content: center;
+    /* Centre l'image horizontalement */
     /*align-items: center;  Centre l'image verticalement */
-    /* border: 1px solid black; */ /* Optionnel : bordure pour visualiser l'espace */
+    /* border: 1px solid black; */
+    /* Optionnel : bordure pour visualiser l'espace */
 }
 
 .contact-image img {
-    max-width: 100%; /* L'image remplit toute la largeur de son conteneur */
-   /* height: auto;  Garde le ratio de l'image */
-    max-height: 100%; /* Limite la hauteur à celle de son conteneur */
-    object-fit: cover; /* Ajuste l'image pour remplir sans déformation */
+    max-width: 100%;
+    /* L'image remplit toute la largeur de son conteneur */
+    /* height: auto;  Garde le ratio de l'image */
+    max-height: 100%;
+    /* Limite la hauteur à celle de son conteneur */
+    object-fit: cover;
+    /* Ajuste l'image pour remplir sans déformation */
     background-position: center;
     background-size: cover;
 }
 
 .contact-form {
     display: flex;
-    flex-direction: column; /* Les éléments du formulaire sont empilés verticalement */
-    gap: 14px; /* Espace entre les champs du formulaire */
-    align-content:center;
+    flex-direction: column;
+    /* Les éléments du formulaire sont empilés verticalement */
+    gap: 14px;
+    /* Espace entre les champs du formulaire */
+    align-content: center;
     justify-content: center;
 }
 
 .contact-form label {
     font-weight: bold;
-    margin-bottom:-4px;
+    margin-bottom: -4px;
 }
 
-.contact-form input, .contact-form textarea {
-    width: 100%; /* Les champs prennent toute la largeur */
-    padding: 16px 10px ;
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    /* Les champs prennent toute la largeur */
+    padding: 16px 10px;
     margin-top: 3px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Pour s'assurer que le padding n'affecte pas la largeur */
+    box-sizing: border-box;
+    /* Pour s'assurer que le padding n'affecte pas la largeur */
 }
 
 .contact-form textarea {
-    height: 100px; /* Hauteur du champ de texte */
+    height: 100px;
+    /* Hauteur du champ de texte */
 }
 
 .contact-form button {
@@ -775,12 +784,11 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition:background-color 0.3s ease;
-    text-transform:uppercase;
-    letter-spacing:1.3px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
 }
 
 .contact-form button:hover {
     background-color: #333;
 }
-
