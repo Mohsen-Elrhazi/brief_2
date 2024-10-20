@@ -21,9 +21,3 @@ window.addEventListener('click', function(event) {
 cancelReservationBtn.addEventListener('click', function() {
     reservationFormContainer.style.display = 'none';
 });
-
-window.addEventListener('click', function(event) {
-    if (event.target == reservationFormContainer) {
-        reservationFormContainer.style.display = 'none';
-    }
-});
