@@ -49,7 +49,6 @@ body {
 .navbar ul {
     display: flex;
     gap: 48px;
-    /* ajuster l'espace entre les elements*/
     list-style: none;
 }
 
@@ -86,13 +85,16 @@ body {
 
 /* L'élément actif, après avoir cliqué dessus */
 .navbar a.active {
-    color: #b99272; /* Change la couleur du lien actif */
+    color: #b99272;
+    /* Change la couleur du lien actif */
 }
 
 .navbar a.active::after {
-    width: 100%; /* Garde l'underline après le clic */
+    width: 100%;
+    /* Garde l'underline après le clic */
     left: 0;
-    background-color: #b99272; /* Garde l'underline en blanc */
+    background-color: #b99272;
+    /* Garde l'underline en blanc */
 }
 
 .navbar button {
@@ -137,9 +139,7 @@ body {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent dark layer */
     z-index: -1;
-    /* Puts the layer behind the content */
 }
 
 .main h1 {
@@ -299,19 +299,12 @@ body {
     display: block;
     /* S'assure que le bouton est un élément de bloc */
     margin: 38px auto;
-    /* Centre le bouton horizontalement */
     padding: 20px 100px;
-    /* Ajoute du rembourrage */
     border: none;
-    /* Supprime la bordure */
     background-color: var(--mainColor);
-    /* Couleur de fond */
     font-size: 20px;
-    /* Taille de la police */
     cursor: pointer;
-    /* Change le curseur pour indiquer que c'est cliquable */
     text-align: center;
-    /* Centre le texte à l'intérieur du bouton */
     color: white;
     transition: all .4S ease-out;
 }
@@ -661,7 +654,6 @@ body {
     padding: 10px 14px; */
     display: flex;
     flex-direction: row;
-    /* justify-content:space-between; */
     gap: 40px;
     /* border: none;
     background-color: var(--mainColor);
@@ -680,8 +672,8 @@ body {
     transition: all .2s;
 }
 
-.btn-card button:nth-of-type(2){
-    padding: 10px 22px ;
+.btn-card button:nth-of-type(2) {
+    padding: 10px 22px;
 
 }
 
@@ -700,62 +692,29 @@ body {
 }
 
 /* contact */
-/* #contain-contact {
-    width: 80%;
-    height: 70vh;
-    margin: 50px auto;
-    border: 1px solid #e9e9e9;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-}
-
-.contact-image {
-    width: 50px;;
-    height: 40px;
-    object-fit: cover;
-}
-
-.contact-form {
-    padding: 10px;
-    border: 1px solid #000;
-    background-color: #f0f0f0;
-} */
-
 #contain-contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* Deux colonnes égales */
-    /*  align-items: space-around;  Aligne les éléments en haut */
     gap: 40px;
-    /* Espace entre l'image et le formulaire */
     padding: 20px;
     width: 70%;
     height: 70vh;
-    /* Hauteur fixe du conteneur */
     margin: 90px auto;
-    /* Centre le conteneur */
-    /* border: 1px solid black;  */
-    box-shadow: 0 0 6px 2px rgb(206, 201, 201,70%)
+
+    box-shadow: 0 0 6px 2px rgb(206, 201, 201, 70%)
 }
 
 .contact-image {
     display: flex;
     justify-content: center;
-    /* Centre l'image horizontalement */
-    /*align-items: center;  Centre l'image verticalement */
-    /* border: 1px solid black; */
-    /* Optionnel : bordure pour visualiser l'espace */
+
 }
 
 .contact-image img {
     max-width: 100%;
-    /* L'image remplit toute la largeur de son conteneur */
-    /* height: auto;  Garde le ratio de l'image */
+
     max-height: 100%;
-    /* Limite la hauteur à celle de son conteneur */
     object-fit: cover;
-    /* Ajuste l'image pour remplir sans déformation */
     background-position: center;
     background-size: cover;
 }
@@ -763,9 +722,7 @@ body {
 .contact-form {
     display: flex;
     flex-direction: column;
-    /* Les éléments du formulaire sont empilés verticalement */
     gap: 14px;
-    /* Espace entre les champs du formulaire */
     align-content: center;
     justify-content: center;
 }
@@ -778,13 +735,11 @@ body {
 .contact-form input,
 .contact-form textarea {
     max-width: 100%;
-    /* Les champs prennent toute la largeur */
     padding: 16px 10px;
     margin-top: 3px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    /* Pour s'assurer que le padding n'affecte pas la largeur */
 }
 
 .contact-form textarea {
@@ -811,13 +766,14 @@ body {
 
 /* Formulaire de réservation */
 .form-overlay {
-    display: none; /* Masqué par défaut */
+    display: none;
+    /* Masqué par défaut */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
     z-index: 1000;
@@ -828,7 +784,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    width: 400px; /* Largeur du formulaire */
+    width: 450px;
+    /* Largeur du formulaire */
 }
 
 .form-content label {
@@ -846,12 +803,13 @@ body {
 }
 
 .form-content button {
-    background-color:var(--mainColor);
+    background-color: var(--mainColor);
     color: white;
     padding: 10px 50px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 14px;
 }
 
 .form-content button:hover {

@@ -1,6 +1,4 @@
 
-
-
 const showReservationFormBtn = document.getElementById('showReservationFormBtn'); // Bouton existant dans la navbar
 const reservationFormContainer = document.getElementById('reservationFormContainer');
 const closeReservationFormBtn = document.getElementById('closeReservationFormBtn');
