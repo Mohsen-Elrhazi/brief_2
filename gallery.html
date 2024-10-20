@@ -15,12 +15,41 @@
             <h1>Coffee<span>.</span></h1>
             <ul>
                 <li><a href="index2.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a class="active" href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
-            <button>Book a table</button>
+            <button id="showReservationFormBtn">Book a table</button>
         </nav>
     </header>
+
+    <!-- bouuton book table -->
+    <!-- Le formulaire de réservation -->
+    <div id="reservationFormContainer" class="form-overlay">
+        <div class="form-content">
+            <span id="closeReservationFormBtn" class="close-btn">&times;</span>
+            <h2>Book a Table</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">hour:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Number of people:</label>
+                <input type="number" id="guests" name="guests" min="1" max="20" required>
+
+                <button type="submit">To Book</button>
+                <button type="button" id="cancelReservationBtn">Annuler</button>
+            </form>
+        </div>
+    </div>
+    <!--  -->
 
     <!-- gallery -->
     <section id="gallery">
@@ -32,7 +61,7 @@
                 <p>Strong, concentrated coffee shot, intense flavor.</p>
                 <div class="btn-card">
                     <button>Read more</button>
-                    <button>Buyy Nowy</button>
+                    <button>Buy Now</button>
                 </div>
             </div>
             <div class="card">
@@ -41,7 +70,7 @@
                 <p>Espresso, steamed milk, topped with foam</p>
                 <div class="btn-card">
                     <button>Read more</button>
-                    <button>Buyy Nowy</button>
+                    <button>Buy Now</button>
                 </div>
             </div>
             <div class="card">
@@ -50,7 +79,7 @@
                 <p>Espresso, mostly milk, creamy texture</p>
                 <div class="btn-card">
                     <button>Read more</button>
-                    <button>Buyy Nowy</button>
+                    <button>Buy Now</button>
                 </div>
             </div>
             <div class="card">
@@ -59,7 +88,7 @@
                 <p>Espresso with hot water, mild flavor</p>
                 <div class="btn-card">
                     <button>Read more</button>
-                    <button>Buyy Nowy</button>
+                    <button>Buy Now</button>
                 </div>
             </div>
             <div class="card">
@@ -68,7 +97,7 @@
                 <p>Espresso with a splash of foam</p>
                 <div class="btn-card">
                     <button>Read more</button>
-                    <button>Buyy Nowy</button>
+                    <button>Buy Now</button>
                 </div>
             </div>
             <div class="card">
@@ -77,7 +106,7 @@
                 <p>Coffee, milk, and chocolate, dessert-like</p>
                 <div class="btn-card">
                     <button>Read more</button>
-                    <button>Buyy Nowy</button>
+                    <button>Buy Now</button>
                 </div>
             </div>
             <div class="card">
@@ -86,7 +115,7 @@
                 <p>Black coffee mixed with steamed milk</p>
                 <div class="btn-card">
                     <button>Read more</button>
-                    <button>Buyy Nowy</button>
+                    <button>Buy Now</button>
                 </div>
             </div>
             <div class="card">
@@ -95,17 +124,17 @@
                 <p>Smooth espresso, velvety steamed milk</p>
                 <div class="btn-card">
                     <button>Read more</button>
-                    <button>Buyy Nowy</button>
+                    <button>Buy Now</button>
                 </div>
             </div>
 
             <div class="card">
                 <img src="./assets/images/Ristretto.jpg" alt="...">
                 <h3>Ristretto</h3>
-                <p>good coffe for you</p>
+                <p>concentrated coffee shot, intense flavor.</p>
                 <div class="btn-card">
                     <button>Read more</button>
-                    <button>Buyy Nowy</button>
+                    <button>Buy Now</button>
                 </div>
             </div>
 
@@ -115,14 +144,16 @@
                 <p>Short, strong espresso, intense taste</p>
                 <div class="btn-card">
                     <button>Read more</button>
-                    <button>Buyy Nowy</button>
+                    <button>Buy Now</button>
                 </div>
             </div>
 
-            
+
         </div>
     </section>
 
+
+    <script src="main.js"></script>
 </body>
 
 </html>
